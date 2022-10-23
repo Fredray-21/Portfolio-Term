@@ -1,5 +1,5 @@
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "monospace", sans-serif;
 }
 
 body {
@@ -21,6 +21,25 @@ body {
   scroll-behavior: auto;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #19191b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e44564;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4d72;
+}
+
 #console-emulator {
   overflow: auto;
   height: 100%;
@@ -36,7 +55,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   box-shadow: 0 8px 32px 0 rgb(0 0 0 / 100%);
-  padding: 10px 30px 10px 10px;
+  padding: 20px 30px 20px 20px;
   height: 95vh;
   width: 98vw;
 }
@@ -65,4 +84,25 @@ body {
   overflow: unset;
   outline: none;
   width: 80%;
+  font-family: "monospace", sans-serif;
+}
+
+#table-help {
+  border-radius: 10px;
+}
+
+
+#table-help td {
+  border-right: 1px solid #e44564;
+  margin: 0;
+  padding: 0;
+}
+#table-help td:nth-child(1) {
+  width: 150px;
+}
+#table-help td:nth-child(2) {
+  width: 300px;
+}
+#table-help td:nth-child(3) {
+  border: none;
 }
