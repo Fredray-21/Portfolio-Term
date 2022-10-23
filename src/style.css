@@ -1,0 +1,68 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(
+    135.8deg,
+    rgb(26, 26, 29) 27.1%,
+    rgb(111, 34, 50) 77.5%
+  );
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: auto;
+}
+
+#console-emulator {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: text;
+}
+
+#terminal {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgb(0 0 0 / 100%);
+  padding: 10px 30px 10px 10px;
+  height: 95vh;
+  width: 98vw;
+}
+
+.terminal-line {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.terminal-line-route {
+  color: #ff4d72;
+}
+
+#terminal-input {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #fff;
+  border: none;
+  overflow: unset;
+  outline: none;
+  width: 80%;
+}
