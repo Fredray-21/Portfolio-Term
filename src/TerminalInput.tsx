@@ -11,14 +11,16 @@ const TerminalInput = (props: { route: any; setArrayResult: any }) => {
     "github",
     "about",
     "competences",
+    "theme",
   ];
 
   const HandleClick = (e: any) => {
     if (e.key === "Enter") {
       const el = document.getElementById("terminal-input") as HTMLInputElement;
       const command = el.value.trim().split(" ")[0].trim().toLowerCase();
+      const commandLastInput = el.value.trim().toLowerCase();
 
-      setLastInput((lastInput: any) => [...lastInput, command]);
+      setLastInput((lastInput: any) => [...lastInput, commandLastInput]);
 
       let commandArgs = [
         el.value
@@ -41,6 +43,16 @@ const TerminalInput = (props: { route: any; setArrayResult: any }) => {
       if (command === "github") {
         window.open("https://github.com/Fredray-21", "_blank");
       }
+
+      if (command === "theme") {
+        const arrColor = ["green", "purple", "blue", "default"];
+        const color = el.value.trim().split(" ")[1]?.trim().toLowerCase();
+        if (arrColor.includes(color)) {
+          document.body.classList.remove(...document.body.classList);
+          document.body.classList.add("theme-" + commandArgs[0]);
+        }
+      }
+
       el.value = "";
     }
 

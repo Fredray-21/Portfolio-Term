@@ -18,6 +18,7 @@ const Terminal = () => {
     "github - Ouvrir mon github - github",
     "about - Afficher mon à propos de moi - about",
     "competences - Afficher mes compétences - competences",
+    "theme - Changer le thème - theme <theme>",
   ];
 
   const result = arrayResult.map((item, i) => {
@@ -59,6 +60,10 @@ const Terminal = () => {
           "L’heure actuelle est :" + m_function.getCurrentDate().split(" ")[1],
         ];
         argument = [];
+        break;
+      case "theme":
+        result = [];
+        argument = item.args;
         break;
       case "competences":
         result = [

@@ -1,5 +1,18 @@
+:root {
+  --terminal-background: rgb(111, 34, 50);
+}
 html {
   font-family: "monospace", sans-serif;
+}
+
+.theme-green {
+  background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, green 77.5%);
+}
+.theme-purple {
+  background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, purple 77.5%);
+}
+.theme-blue {
+  background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, blue 77.5%);
 }
 
 body {
@@ -7,7 +20,7 @@ body {
   background: linear-gradient(
     135.8deg,
     rgb(26, 26, 29) 27.1%,
-    rgb(111, 34, 50) 77.5%
+    var(--terminal-background) 77.5%
   );
   display: flex;
   height: 100vh;
@@ -90,7 +103,6 @@ body {
 #table-help {
   border-radius: 10px;
 }
-
 
 #table-help td {
   border-right: 1px solid #e44564;
