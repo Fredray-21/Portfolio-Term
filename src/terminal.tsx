@@ -18,7 +18,7 @@ const Terminal = () => {
     "github - Ouvrir mon github - github",
     "about - Afficher mon à propos de moi - about",
     "competences - Afficher mes compétences - competences",
-    "theme - Changer le thème - theme <theme>",
+    "socials - Afficher mes réseaux sociaux - socials",
   ];
 
   const result = arrayResult.map((item, i) => {
@@ -61,10 +61,6 @@ const Terminal = () => {
         ];
         argument = [];
         break;
-      case "theme":
-        result = [];
-        argument = item.args;
-        break;
       case "competences":
         result = [
           "Mes competences",
@@ -81,7 +77,17 @@ const Terminal = () => {
         ];
         argument = [];
         break;
-      default:
+        case "socials":
+        result = [
+          "Mes réseaux sociaux",
+          "- - -",
+          <a href="https://github.com/Fredray-21" target="_blank">Github : <span>@Fredray-21</span></a>,
+          <a href="https://www.linkedin.com/in/frederic-dabadie/" target="_blank" >Linkedin : <span>Frédéric Dabadie</span></a>,
+          <a href="https://frederic-dabadie.fr/" target="_blank" >Website : <span>Portfolio</span></a>,
+        ];
+        argument = [];
+        break;
+           default:
         result = [];
         if (item.commande.trim() !== "") {
           result = [
