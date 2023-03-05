@@ -18,6 +18,9 @@ Cela installera les dépendances nécessaires et lancera l'application dans votr
 ## Fonctionnalités
 Ce portfolio présente mes projets, mes compétences et mes expériences professionnelles.
 
+## Disponibilité
+Ce Portfolio est disponible sur [ce lien.](https://terminal.frederic-dabadie.fr)
+
 
 ## Captures d'écran
 ![Photo de la page Web](https://cdn.discordapp.com/attachments/523901548779012107/1081935531744706621/image.png)
