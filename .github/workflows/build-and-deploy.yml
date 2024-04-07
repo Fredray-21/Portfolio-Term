@@ -47,4 +47,4 @@ jobs:
             docker pull ghcr.io/${{ steps.convert_repository.outputs.owner }}/${{ steps.convert_repository.outputs.repo }}:${{ github.sha }}
             docker stop portfolio_term_website || true
             docker rm portfolio_term_website || true
-            docker run -d --name portfolio_term_website -p 8080:5000 ghcr.io/${{ steps.convert_repository.outputs.owner }}/${{ steps.convert_repository.outputs.repo }}:${{ github.sha }}
+            docker run -d --name portfolio_term_website -p 5001:5000 ghcr.io/${{ steps.convert_repository.outputs.owner }}/${{ steps.convert_repository.outputs.repo }}:${{ github.sha }}

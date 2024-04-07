@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import Terminal from "./Terminal";
+import Terminal from "./terminal";
 import "./style.css";
 
 const container = document.getElementById("root");

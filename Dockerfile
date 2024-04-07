@@ -11,4 +11,6 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "build"]
+
+ENTRYPOINT ["npx", "http-server", "-p", "5000", "build"]
